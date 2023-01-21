@@ -2,13 +2,23 @@
 
 <head>
     <script src="https://cdn.jsdelivr.net/pyodide/v0.22.0/full/pyodide.js"></script>
+    <script src="https://unpkg.com/blockly/blockly.min.js"></script>
+    <style>
+        *{
+            padding:4px;
+            margin:4px;
+            font-size:20px;
+        }
+    </style>
 </head>
 
 <body>
     <div id="container">
     </div>
+    <div id="blocklyDiv" style="height: 480px; width: 600px;"></div>
     <button type="button" id="run">Run</button>
     <script type="module" src="main.js"></script>
+    <script type="module" src="blocks.js"></script>
 </body>
 
 </html>
